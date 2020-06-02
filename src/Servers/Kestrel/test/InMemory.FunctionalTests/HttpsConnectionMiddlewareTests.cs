@@ -368,7 +368,7 @@ namespace Microsoft.AspNetCore.Server.Kestrel.InMemory.FunctionalTests
             {
                 listenOptions.UseHttps(options =>
                 {
-                    options.SslProtocols = SslProtocols.Tls12 | SslProtocols.Tls12;
+                    options.SslProtocols = SslProtocols.Tls11 | SslProtocols.Tls12;
                     options.ServerCertificate = _x509Certificate2;
                     options.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
                     options.AllowAnyClientCertificate();
